@@ -1,0 +1,10 @@
+.next
+.eslintrc.js
+.prettierrc
+styles
+next-env.d.ts
+node_modules
+yarn.lock
+public
+*.md
+*.json
