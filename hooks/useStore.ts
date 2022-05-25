@@ -1,6 +1,7 @@
 import { useContext } from 'react';
-import { StoreContext } from '../src/store/StoreProvider';
-import AppStore from '../src/store/AppStore';
+
+import { StoreContext } from '@/store/StoreProvider';
+import AppStore from '@/store/AppStore';
 
 export default function useStore(): AppStore {
   const context = useContext(StoreContext);

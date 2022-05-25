@@ -1,11 +1,12 @@
 import { action, makeAutoObservable, observable } from 'mobx';
+import { persist } from 'mobx-persist';
 
 export default class CounterStore {
   constructor() {
     makeAutoObservable(this);
   }
 
-  @observable count = 0;
+  @persist @observable count = 0;
 
   @action increment = () => {
     this.count = this.count + 1;

@@ -1,7 +1,7 @@
 import { create } from 'mobx-persist';
 import { enableStaticRendering } from 'mobx-react-lite';
 
-import CounterStore from './stores/CounterStore';
+import CounterStore from '@/store/stores/CounterStore';
 
 enableStaticRendering(typeof window === 'undefined');
 
@@ -12,7 +12,7 @@ export default class AppStore {
 
   constructor() {
     if (typeof window !== 'undefined') {
-      hydrate(`testStore`, this.counterStore); // if need hydrate
+      hydrate(`counterStore`, this.counterStore); // if need hydrate
     }
   }
 }

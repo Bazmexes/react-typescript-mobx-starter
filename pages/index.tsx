@@ -1,5 +1,6 @@
 import type { NextPage } from 'next';
-import Counter from '../src/components/Counter/Counter';
+
+import Counter from '@/components/pages/index/Counter/Counter';
 
 const Home: NextPage = () => {
   return (
