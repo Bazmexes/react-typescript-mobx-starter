@@ -2,20 +2,34 @@
 
 Данная сборка предназначенна для быстрого старта новых проектов.
 
-Сборка построена на Next.js в typescript формате, 
-в качестве стейтменджера используется Mobx. 
-
 Сборку я делал для себя, но если вдруг она вам помогла, кликните на звезду.
 
 
+## Технологический стек
+
+* [React](https://ru.reactjs.org/) - JS-фреймворк
+
+* [MobX](https://mobx.js.org/README.html) - Стейт-менеджер
+
+  * [Mobx Persist](https://www.npmjs.com/package/mobx-persist) - Сохранение данных в localStorage
+
+* [TypeScript](https://www.typescriptlang.org/) - Типизация
+
+* [Yarn](https://yarnpkg.com/) - Менеджер nodejs-пакетов
+
 ### Установка зависимостей
 
-```
-  yarn
-```
+```yarn```
 
-### Запуск сборки 
+### Запуск локального dev-сервера
 
-```
-  yarn dev
-```
+```yarn dev```
+
+### Prettier 
+
+Для автоматического форматирования кода используется prettier, конфиг можно поправить в файле .prettierrc
+
+Для работы в продуктах jetbrains нужно установить расширение prettier и в настройках языка JavaScript поставить 
+галочку на onSave и указать расширания файлов {**/*,*}.{js,ts,jsx,tsx}
+
+Для vscode [Статья по подключению](https://glebbahmutov.com/blog/configure-prettier-in-vscode/)

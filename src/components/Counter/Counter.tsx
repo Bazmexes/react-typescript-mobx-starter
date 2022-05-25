@@ -8,7 +8,7 @@ const Counter = () => {
   } = useStore();
 
   return (
-    <div>
+    <div className={'test'}>
       <button onClick={decrement}>минус</button>
       <p>{count}</p>
       <button onClick={increment}>плюс</button>
