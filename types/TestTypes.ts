@@ -1,7 +1,18 @@
-export type TypeTest = {
-  test: string;
-};
-
-export type TypeTest2 = {
-  test2: string;
+export type TypeStarWarsPeople = {
+  name: string;
+  height: string;
+  mass: string;
+  hair_color: string;
+  skin_color: string;
+  eye_color: string;
+  birth_year: string;
+  gender: string;
+  homeworld: string;
+  films: string[];
+  species: string[];
+  vehicles: string[];
+  starships: string[];
+  created: string;
+  edited: string;
+  url: string;
 };
